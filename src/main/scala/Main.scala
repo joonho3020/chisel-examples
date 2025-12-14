@@ -51,6 +51,7 @@ object Main extends App {
   elaborate(new LCS6, "LCS6")
   elaborate(new LCS7, "LCS7")
   elaborate(new LCS8, "LCS8")
+// elaborate(new NestedBundleModule, "NestedBundleModule")
   elaborate(new WireRegInsideWhen, "WireRegInsideWhen")
   elaborate(new MultiWhen, "MultiWhen")
 
