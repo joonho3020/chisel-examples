@@ -25,6 +25,8 @@ object Main extends App {
     val chirrtlWriter = new PrintWriter(f"generated/$name.fir")
     chirrtlWriter.write(chirrtl)
     chirrtlWriter.close()
+
+// val lofirrtl = ChiselStage.em
   }
 
   elaborate(new Adder(2), "Adder")
@@ -83,4 +85,6 @@ object Main extends App {
   elaborate(new FFTStep2, "FFTStep2")
   elaborate(new FFTStep3, "FFTStep3")
   elaborate(new FFTStep4, "FFTStep4")
+
+  elaborate(new MyCustomQueue(UInt(3.W), 4), "MyCustomQueue")
 }
