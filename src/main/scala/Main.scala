@@ -71,6 +71,7 @@ object Main extends App {
   elaborate(new AggregateSRAM(2), "AggregateSRAM")
   elaborate(new DualReadSingleWritePortSRAM(2), "DualReadSingleWritePortSRAM")
   elaborate(new OneReadOneReadWritePortSRAM(2), "OneReadOneReadWritePortSRAM")
+  elaborate(new TopSRAMModule, "TopSRAMModule")
 
   elaborate(new CombHierarchy, "CombHierarchy")
 
